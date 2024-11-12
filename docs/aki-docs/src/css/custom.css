@@ -1,0 +1,103 @@
+:root {
+  /* Warm rust/cinnamon as primary color */
+  --ifm-color-primary: #c46d38;
+  --ifm-color-primary-dark: #b16233;
+  --ifm-color-primary-darker: #a75c30;
+  --ifm-color-primary-darkest: #894c28;
+  --ifm-color-primary-light: #ca7c4c;
+  --ifm-color-primary-lighter: #ce8558;
+  --ifm-color-primary-lightest: #d69875;
+
+  /* Warm cream background */
+  --ifm-background-color: #faf6f1;
+  --ifm-navbar-background-color: #f5efe7;
+  --ifm-footer-background-color: #ebe4d9;
+
+  /* Warm gray for text */
+  --ifm-font-color-base: #463f3a;
+  
+  /* Link colors */
+  --ifm-link-color: #9b4f25;
+  --ifm-link-hover-color: #7d3f1d;
+
+  /* Code blocks */
+  --ifm-code-background: #f3e9dd;
+  --ifm-code-padding-horizontal: 0.4rem;
+}
+
+/* Dark mode - darker autumn evening colors */
+[data-theme='dark'] {
+  /* Deep burgundy as primary color */
+  --ifm-color-primary: #e6a278;
+  --ifm-color-primary-dark: #d88b5c;
+  --ifm-color-primary-darker: #c97c4d;
+  --ifm-color-primary-darkest: #b66c3f;
+  --ifm-color-primary-light: #edb493;
+  --ifm-color-primary-lighter: #f1c3a7;
+  --ifm-color-primary-lightest: #f6d4bf;
+
+  /* Deep warm background */
+  --ifm-background-color: #2a2422;
+  --ifm-navbar-background-color: #231f1d;
+  --ifm-footer-background-color: #1c1918;
+
+  /* Warm light text */
+  --ifm-font-color-base: #e6d5c7;
+  
+  /* Link colors */
+  --ifm-link-color: #e6a278;
+  --ifm-link-hover-color: #edb493;
+
+  /* Code blocks */
+  --ifm-code-background: #352e2a;
+}
+
+/* Additional autumn styling */
+.footer {
+  border-top: 3px solid rgba(196, 109, 56, 0.2);
+}
+
+.navbar {
+  border-bottom: 3px solid rgba(196, 109, 56, 0.2);
+}
+
+/* Optional: Add a subtle texture to backgrounds */
+.main-wrapper {
+  background-image: linear-gradient(
+    45deg,
+    rgba(196, 109, 56, 0.03) 25%,
+    transparent 25%
+  ),
+  linear-gradient(
+    -45deg,
+    rgba(196, 109, 56, 0.03) 25%,
+    transparent 25%
+  );
+  background-size: 20px 20px;
+}
+
+/* Make blockquotes more autumn-styled */
+blockquote {
+  border-left: 3px solid var(--ifm-color-primary);
+  background: rgba(196, 109, 56, 0.05);
+}
+
+/* Style admonitions (callouts) with autumn colors */
+.alert {
+  border-left-width: 3px;
+}
+
+.alert--info {
+  --ifm-alert-background-color: rgba(196, 109, 56, 0.1);
+  --ifm-alert-border-color: #c46d38;
+}
+
+.alert--warning {
+  --ifm-alert-background-color: rgba(191, 87, 0, 0.1);
+  --ifm-alert-border-color: #bf5700;
+}
+
+.alert--danger {
+  --ifm-alert-background-color: rgba(165, 42, 42, 0.1);
+  --ifm-alert-border-color: #a52a2a;
+}
