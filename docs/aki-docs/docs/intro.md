@@ -5,6 +5,7 @@ sidebar_position: 1
 # The Aki Programming Language
 
 > Aki is currently in development. Documentation and features may evolve.
+> There may be logic holes in the documentation. This is due to us mainly writing the documentation as we go along and as a spec that is to be implemented and then tested. If we find problems we will fix them.
 
 ## Why Aki?
 
@@ -51,7 +52,7 @@ extern "C++" {
 
 complex ModernWrapper {
   let priv legacy: LegacyClass;
-  
+
   fn modernize(data: &str) : Result<i32, Error> {
     // Safe Aki code interfacing with legacy C++
     // Full IDE support and safety guarantees
