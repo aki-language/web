@@ -123,3 +123,22 @@ a, button, .navbar, .alert {
     --ifm-navbar-padding-horizontal: 1rem;
   }
 }
+
+.playground-editor-container {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-code-border-radius);
+  overflow: hidden;
+}
+
+.playground-output {
+  background: var(--ifm-pre-background);
+  border-radius: var(--ifm-code-border-radius);
+  padding: 1rem;
+  height: 500px;
+  overflow: auto;
+}
+
+.playground-output pre {
+  margin: 0;
+  white-space: pre-wrap;
+}

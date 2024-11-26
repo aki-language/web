@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://aki.vhtek.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -78,6 +78,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/playground', label: 'Playground', position: 'left'},
         {
           href: 'https://github.com/aki-language/aki',
           label: 'GitHub',
@@ -116,6 +117,15 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/aki-language',
+            },
+          ],
+        },
+        {
+          title: 'Playground',
+          items: [
+            {
+              label: 'Playground',
+              to: '/playground',
             },
           ],
         },
