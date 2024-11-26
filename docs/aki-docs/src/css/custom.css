@@ -1,103 +1,125 @@
 :root {
-  /* Warm rust/cinnamon as primary color */
-  --ifm-color-primary: #c46d38;
-  --ifm-color-primary-dark: #b16233;
-  --ifm-color-primary-darker: #a75c30;
-  --ifm-color-primary-darkest: #894c28;
-  --ifm-color-primary-light: #ca7c4c;
-  --ifm-color-primary-lighter: #ce8558;
-  --ifm-color-primary-lightest: #d69875;
+  /* Modern color palette - Purple & Turquoise */
+  --ifm-color-primary: #5DE6C7;
+  --ifm-color-primary-dark: #4CD1B4;
+  --ifm-color-primary-darker: #3BBDA1;
+  --ifm-color-primary-darkest: #2AA88E;
+  --ifm-color-primary-light: #6EEBD0;
+  --ifm-color-primary-lighter: #7FEFD9;
+  --ifm-color-primary-lightest: #90F4E2;
 
-  /* Warm cream background */
-  --ifm-background-color: #faf6f1;
-  --ifm-navbar-background-color: #f5efe7;
-  --ifm-footer-background-color: #ebe4d9;
+  /* Clean, modern background */
+  --ifm-background-color: #1E1527;
+  --ifm-navbar-background-color: rgba(45, 31, 61, 0.8);
+  --ifm-footer-background-color: #1A1221;
 
-  /* Warm gray for text */
-  --ifm-font-color-base: #463f3a;
-  
-  /* Link colors */
-  --ifm-link-color: #9b4f25;
-  --ifm-link-hover-color: #7d3f1d;
+  /* Modern typography colors */
+  --ifm-font-color-base: #ffffff;
 
-  /* Code blocks */
-  --ifm-code-background: #f3e9dd;
-  --ifm-code-padding-horizontal: 0.4rem;
+  /* Interactive elements */
+  --ifm-link-color: #5DE6C7;
+  --ifm-link-hover-color: #7FEFD9;
+  --ifm-link-decoration: none;
+
+  /* Code blocks with subtle styling */
+  --ifm-code-background: #2D1F3D;
+  --ifm-code-padding-horizontal: 0.75rem;
+  --ifm-code-border-radius: 6px;
+
+  /* Modern spacing and sizing */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-navbar-padding-vertical: 1rem;
+  --ifm-navbar-padding-horizontal: 1.5rem;
 }
 
-/* Dark mode - darker autumn evening colors */
-[data-theme='dark'] {
-  /* Deep burgundy as primary color */
-  --ifm-color-primary: #e6a278;
-  --ifm-color-primary-dark: #d88b5c;
-  --ifm-color-primary-darker: #c97c4d;
-  --ifm-color-primary-darkest: #b66c3f;
-  --ifm-color-primary-light: #edb493;
-  --ifm-color-primary-lighter: #f1c3a7;
-  --ifm-color-primary-lightest: #f6d4bf;
+/* Light mode - Modern light theme */
+[data-theme='light'] {
+  /* Vibrant accent colors for light mode */
+  --ifm-color-primary: #2D1F3D;
+  --ifm-color-primary-dark: #251834;
+  --ifm-color-primary-darker: #1E1527;
+  --ifm-color-primary-darkest: #17111E;
+  --ifm-color-primary-light: #352546;
+  --ifm-color-primary-lighter: #3D2B4F;
+  --ifm-color-primary-lightest: #453258;
 
-  /* Deep warm background */
-  --ifm-background-color: #2a2422;
-  --ifm-navbar-background-color: #231f1d;
-  --ifm-footer-background-color: #1c1918;
+  /* Light background */
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.8);
+  --ifm-footer-background-color: #f8f9fa;
 
-  /* Warm light text */
-  --ifm-font-color-base: #e6d5c7;
-  
-  /* Link colors */
-  --ifm-link-color: #e6a278;
-  --ifm-link-hover-color: #edb493;
+  /* Improved light mode text contrast */
+  --ifm-font-color-base: #2D1F3D;
 
-  /* Code blocks */
-  --ifm-code-background: #352e2a;
+  /* Light mode link colors */
+  --ifm-link-color: #2D1F3D;
+  --ifm-link-hover-color: #453258;
+
+  /* Light mode code blocks */
+  --ifm-code-background: #f5f5f5;
 }
 
-/* Additional autumn styling */
-.footer {
-  border-top: 3px solid rgba(196, 109, 56, 0.2);
-}
-
+/* Modern glass-morphism navbar */
 .navbar {
-  border-bottom: 3px solid rgba(196, 109, 56, 0.2);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(93, 230, 199, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Add a subtle texture to backgrounds */
+/* Clean footer styling */
+.footer {
+  border-top: 1px solid rgba(93, 230, 199, 0.1);
+}
+
+/* Modern gradient background */
 .main-wrapper {
-  background-image: linear-gradient(
-    45deg,
-    rgba(196, 109, 56, 0.03) 25%,
-    transparent 25%
-  ),
-  linear-gradient(
-    -45deg,
-    rgba(196, 109, 56, 0.03) 25%,
-    transparent 25%
+  background: linear-gradient(
+    135deg,
+    rgba(45, 31, 61, 0.05) 0%,
+    rgba(93, 230, 199, 0.05) 100%
   );
-  background-size: 20px 20px;
 }
 
-/* Make blockquotes more autumn-styled */
+/* Contemporary blockquote styling */
 blockquote {
-  border-left: 3px solid var(--ifm-color-primary);
-  background: rgba(196, 109, 56, 0.05);
+  border-left: 4px solid var(--ifm-color-primary);
+  background: rgba(93, 230, 199, 0.05);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
 }
 
-/* Style admonitions (callouts) with autumn colors */
+/* Modern alert styling */
 .alert {
-  border-left-width: 3px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .alert--info {
-  --ifm-alert-background-color: rgba(196, 109, 56, 0.1);
-  --ifm-alert-border-color: #c46d38;
+  --ifm-alert-background-color: rgba(93, 230, 199, 0.1);
+  --ifm-alert-border-color: rgba(93, 230, 199, 0.2);
 }
 
 .alert--warning {
-  --ifm-alert-background-color: rgba(191, 87, 0, 0.1);
-  --ifm-alert-border-color: #bf5700;
+  --ifm-alert-background-color: rgba(157, 142, 199, 0.1);
+  --ifm-alert-border-color: rgba(157, 142, 199, 0.2);
 }
 
 .alert--danger {
-  --ifm-alert-background-color: rgba(165, 42, 42, 0.1);
-  --ifm-alert-border-color: #a52a2a;
+  --ifm-alert-background-color: rgba(255, 99, 132, 0.1);
+  --ifm-alert-border-color: rgba(255, 99, 132, 0.2);
+}
+
+/* Modern transitions */
+a, button, .navbar, .alert {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --ifm-spacing-horizontal: 1rem;
+    --ifm-navbar-padding-horizontal: 1rem;
+  }
 }

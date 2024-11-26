@@ -1,11 +1,118 @@
 .features {
-  display: flex;
-  align-items: center;
+  background-color: var(--ifm-background-color);
   padding: 2rem 0;
-  width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.heroSection {
+  text-align: left;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, var(--ifm-color-primary) 30%, var(--ifm-color-primary-light) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary-lighter);
+  margin-bottom: 2rem;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-background-color);
+}
+
+.primaryButton:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: var(--ifm-background-color);
+  text-decoration: none;
+}
+
+.secondaryButton {
+  background-color: rgba(157, 142, 199, 0.1);
+  color: var(--ifm-color-primary-lighter);
+}
+
+.secondaryButton:hover {
+  background-color: rgba(157, 142, 199, 0.2);
+  color: var(--ifm-color-primary-lighter);
+  text-decoration: none;
+}
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background-color: rgba(45, 31, 61, 0.5);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.featureIcon {
+  background-color: var(--ifm-color-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary-lighter);
+}
+
+.featureDescription {
+  color: var(--ifm-color-primary-lightest);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .featuresContainer {
+    grid-template-columns: 1fr;
+  }
 }

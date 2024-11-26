@@ -8,6 +8,7 @@ Aki has a number of inbuilt types that are used to represent basic data types. T
 Unlike as in C++, the types are _the same_ across all platforms.
 
 ```jsx title="Integer types"
+byte // 8 bit unsigned integer, guaranteed to be 8 bits on *all* platforms (equal to u8)
 i8
 i16
 i32

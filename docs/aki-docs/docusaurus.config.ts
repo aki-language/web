@@ -65,9 +65,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Aki Lang',
+      title: 'Aki Language',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Aki Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -79,7 +79,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/aki-language/aki',
           label: 'GitHub',
           position: 'right',
         },
