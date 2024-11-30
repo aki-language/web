@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Aki-Lang', // Usually your GitHub org/user name.
-  projectName: 'Aki', // Usually your repo name.
+  organizationName: 'aki-lang', // Usually your GitHub org/user name.
+  projectName: 'web', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
